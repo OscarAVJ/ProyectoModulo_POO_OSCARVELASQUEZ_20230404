@@ -14,7 +14,7 @@ public class BookEntity {
 
 
     @Id
-    @SequenceGenerator(name = "seq_libro")
+    @SequenceGenerator(name = "seq_libro", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_libro")
     @Column(name ="IDLIBRO")
     private int id;
