@@ -10,6 +10,9 @@ import lombok.*;
 @Getter @Setter
 public class BookDTO {
 
+    /***
+     * Aca definimos nuestro dto y pues sus respectivas validaciones
+     */
     private int id;
 
     @NotBlank

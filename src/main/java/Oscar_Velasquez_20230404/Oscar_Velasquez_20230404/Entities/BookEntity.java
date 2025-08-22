@@ -11,7 +11,11 @@ import lombok.ToString;
 @Getter @Setter @ToString
 @EqualsAndHashCode
 public class BookEntity {
-
+    /***
+     * Aca definimos nuestra entidad
+     * Definimos la secuencia que incrementara nuestro id
+     * y posteriormente las columnas con su respectivo getter y setter
+     */
 
     @Id
     @SequenceGenerator(name = "seq_libro", allocationSize = 1)
@@ -19,18 +23,23 @@ public class BookEntity {
     @Column(name ="IDLIBRO")
     private int id;
 
-    @Column(name = "titulo")
+    ///Columna titulo en la db
+    @Column(name = "TITULO")
     private String title;
 
+    //Columna isbn en la db
     @Column(name = "ISBN")
     private String isbn;
 
+    //Columna añopublicacion en la db
     @Column(name = "AÑO_PUBLICACION")
     private int yearPublished;
 
+    //Columna genero en la db
     @Column(name = "GENERO")
     private String gender;
 
+    //Columna idAutor en la db
     @Column(name = "IDAUTOR")
     private int idAutor;
 
